@@ -1,0 +1,70 @@
+/* Fonts */
+@font-face {
+	/* Reference name */
+	font-family: 'Inter';
+	/* For multiple files use commas, ex: url(), url(), ... */
+	src: url('/fonts/Inter-VariableFont_slnt,wght.ttf');
+}
+
+:root {
+    --theme-font-family-base: 'Inter', sans-serif;
+    --theme-font-family-heading: 'Inter', sans-serif;
+}
+
+/* Default header styles */
+
+h1 {
+	@apply h1
+}
+
+h2 {
+	@apply h2
+}
+
+h3 {
+	@apply h3
+}
+
+h4 {
+	@apply h4
+}
+
+h5 {
+	@apply h5
+}
+
+h6 {
+	@apply h6
+}
+
+/* App Shell */
+html, body {
+	@apply h-full overflow-hidden;
+}
+
+/* Hiding class, making content visible only to screen readers but not visually */
+/* https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html */
+.sr-only:not(:focus):not(:active) {
+	clip: rect(0 0 0 0); 
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap; 
+	width: 1px;
+}
+
+.viewport-center {
+	@apply fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+}
+
+.reading-progress {
+	--x: 50%;
+	--y: 95%;
+	position: fixed;
+	left: var(--x);
+	top: var(--y);
+	/* bring your own prefixes */
+	transform: translateX(calc(0% - var(--x))) translateY(calc(0% - var(--y)));
+	width: 90vw;
+}
