@@ -23,7 +23,7 @@
 </script>
 
 {#if !book}
-	<h1>404</h1>
+	<h1 class="h1">404</h1>
 	<p>Book does not exist.</p>
 {:else}
 	<!-- TODO: Put cover and title/author side-by-side -->
@@ -35,8 +35,8 @@
 		{/if}
 	{/await} -->
 
-	<h1>{$book.title}</h1>
-	<h6 class="text-slate-600">{$book.creator}</h6>
+	<h1 class="h1">{$book.title}</h1>
+	<h6 class="h6 text-slate-600">{$book.creator}</h6>
 
 	<!-- TODO: Resume button -->
 

@@ -48,7 +48,7 @@
 	}
 </script>
 
-<h2>Import/Export</h2>
+<h2 class="h1">Import/Export</h2>
 
 <ul class="list">
 	<li>

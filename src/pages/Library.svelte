@@ -49,7 +49,7 @@
 	</dl>
 {:else}
 	<!-- TODO: Find an elegant way of centering this message. -->
-	<h2>No books</h2>
+	<h2 class="h1">No books</h2>
 	<p>
 		Add some by pressing the "Scan" button in the upper right hand corner.
 	</p>

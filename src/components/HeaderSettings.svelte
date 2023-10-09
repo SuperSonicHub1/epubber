@@ -3,5 +3,5 @@
 </script>
 
 <AppBar gridColumns="grid-cols-2" slotDefault="place-self-beginning" class="w-full">
-	<h1>Settings</h1>
+	<h1 class="h1">Settings</h1>
 </AppBar>

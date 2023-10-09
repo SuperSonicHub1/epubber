@@ -145,10 +145,10 @@
 			</div>
 		{/await}
 	{:else}
-		<h2>404</h2>
+		<h2 class="h1">404</h2>
 		<p>Book does not exist.</p>
 	{/if}
 {:catch error}
-	<h1>Error</h1>
+	<h1 class="h1">Error</h1>
 	<p>{error.message}</p>
 {/await}
