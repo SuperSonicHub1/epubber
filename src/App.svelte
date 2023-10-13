@@ -39,7 +39,7 @@
 </script>
 
 <svelte:head>
-	{@html `<script>${autoModeWatcher.toString()} autoModeWatcher();</script>`}
+	{@html '<script>' + autoModeWatcher.toString() + ';autoModeWatcher();</script>'}
 </svelte:head>
 
 <Modal components={modalComponentRegistry} />
