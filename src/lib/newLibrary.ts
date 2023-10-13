@@ -6,11 +6,12 @@ import { each } from "async"
 import { get, writable } from "svelte/store"
 import epub, { Book, type NavItem } from "epubjs"
 import { size, toastError, uniqBy } from "./util"
+import { showDirectoryPicker } from "native-file-system-adapter"
 
 export const directoryHandle = writable<FileSystemDirectoryHandle | null>(null)
 export async function setDirectory() {
 	try {
-		directoryHandle.set(await window.showDirectoryPicker({ id: "epubber-library", startIn: "documents" }))
+		directoryHandle.set(await showDirectoryPicker({ id: "epubber-library", startIn: "documents" }))
 		await navigator?.storage?.persist()
 	} catch (error) {
 		toastError('Directory', error)

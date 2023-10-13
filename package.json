@@ -32,6 +32,7 @@
     "@floating-ui/dom": "^1.5.1",
     "async": "^3.2.4",
     "epubjs": "^0.3.93",
+    "native-file-system-adapter": "^3.0.0",
     "regexparam": "^2.0.1",
     "svelte-awesome": "^3.2.1",
     "svelte-headlessui": "^0.0.20",
